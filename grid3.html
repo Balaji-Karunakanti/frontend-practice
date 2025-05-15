@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <style>
+    p{
+      margin-left: 10px;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 15px;
+    }
+    .oliver{
+      width: 200px;
+    }
+    .small{
+       width: 35px;
+      height: 35px;
+      object-fit: cover;
+      border-radius: 100px;
+      margin-left: 10px;
+    }
+    button{
+       padding: 10px 12px 10px 12px ;
+      background-color: rgb(51, 115, 235);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    .card{
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    }
+    .mutual-row{
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      align-items: center;
+      column-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="cat.jpg" alt="cat" class="oliver">
+
+      <p>Oliver</p>
+
+      <div class="mutual-row">
+        <img src="dog.jpg" alt="small" class="small">
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <button>Add friend</button>
+    </div>
+     <div class="card">
+      <img src="cat.jpg" alt="cat" class="oliver">
+
+      <p>Oliver</p>
+
+      <div class="mutual-row">
+        <img src="dog.jpg" alt="small" class="small">
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <button>Add friend</button>
+    </div>
+     <div class="card">
+      <img src="cat.jpg" alt="cat" class="oliver">
+
+      <p>Oliver</p>
+
+      <div class="mutual-row">
+        <img src="dog.jpg" alt="small" class="small">
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <button>Add friend</button>
+    </div>
+  </div>
+</body>
+</html>
